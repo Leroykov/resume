@@ -7,71 +7,86 @@
     <meta name="keywords" content="valeriya, cv, resume">
     <meta name="description" content="Это сайт резюме Валерии Коваленко.">
     <title>Valeriya Kovalenko Resume</title>
+    <link rel="stylesheet" href="resum.css">
 </head>
 <body>
-    <img src="Аватар.jpg" alt="Тут фотка Валерии" width="350">
-    <h1>Валерия Коваленко</h1>
-    <p>Я студентка 3 курса специальность <strong>издательство и полиграфия.</strong> Интересуюсь графическим дизайном, web-разработкой, а также верстанием газетной продукции</p>
+    <div class="container">
+        <div class="info">
+            <img src="Аватар.jpg" alt="Тут фотка Валерии" class="avatar">
+            <div class="info-text">
+                <h1>Валерия Коваленко</h1>
+                <p>Я студентка 3 курса. Моя специальность <strong>издательство и полиграфия.</strong> Интересуюсь графическим дизайном, web-разработкой, а также верстанием газетной продукции</p>
 
-    <p>Я люблю писать <em> стихи, кататься на велосипеде и создавать креативные продуты</em></p>
+                <p>Я люблю писать <em> стихи, кататься на велосипеде и создавать креативные продукты</em></p>
 
-    <h4>Список социальных сетей:</h4>
-    <a href="https://t.me/vishnya_kvi" target="_blank">Telegram</a>
-    |
-    <a href="https://www.instagram.com/val_emerald/" target="_blank">Instagram</a>
-    |
-    <a href="https://www.tiktok.com/@va_leriel/" target="_blank" >TikTok</a>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://t.me/vishnya_kvi" target="_blank" class="btn">Telegram</a>
+                |
+                <a href="https://www.instagram.com/val_emerald/" target="_blank" class="btn">Instagram</a>
+                |
+                <a href="https://www.tiktok.com/@va_leriel/" target="_blank" class="btn" >TikTok</a>
+            </div>
+        </div>
 
-    
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Копирайтинг</li>
-        <li>Графический дизайн</li>
-        <li>Кулинария</li>
-        <li>Легкая атлетика</li>
-    </ol>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Копирайтинг</li>
+                <li>Графический дизайн</li>
+                <li>Кулинария</li>
+                <li>Легкая атлетика</li>
+                <li>Визаж</li>
+            </ol>
+        </div>
 
-    <h2>Образование</h2>
-    <table width="500">
-        <thead>
-            <tr>
-                <th>Года</th>
-                <th>Название</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2008-2012</td>
-                <td>ЗОШ №1 г. Мирноград</td>
-            </tr>
-            <tr>
-                <td>2012-2019</td>
-                <td>Мирноградский НВК</td>
-            </tr>
-            <tr>
-                <td>2019-2023</td>
-                <td>Харьвский Политехнический Институт</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="card bg-red">
+            <h2>Образование</h2>
+            <table width="500" class="table">
+                <thead>
+                    <!-- <tr>
+                        <th>Года</th>
+                        <th>Название</th>
+                    </tr> -->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2008-2012</td>
+                        <td>ЗОШ №1 г. Мирноград</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2019</td>
+                        <td>Мирноградский НВК</td>
+                    </tr>
+                    <tr>
+                        <td>2019-2023</td>
+                        <td>Харьковский Политехнический Институт</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-    <div>
-        <label for="text">Ваше имя:</label>
-        <input type="text" id="text" placeholder="Введите имя">
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="text">Ваше имя:</label>
+                    <input type="text" id="text" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group"> 
+                    <label for="email">Ваш еmail:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+        <div class="form-group">
+            <label for="message">Ваше сообщение</label>
+            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить!</button>
+        </form>
     </div>
-
-    <div>
-        <label for="email">Ваш еmail:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение</label>
-        <br> 
-        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <button type="submit">Отправить!</button>
-    </form>
 </body>
 </html>
